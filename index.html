@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b36">
+  <meta name="description" content="Practical money tools, ways to earn online, saving guides and country information.">
+  <title>PocketPilot — Smart tools. Better decisions.</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="PocketPilot home"><span class="brandmark">✦</span><span>PocketPilot<small>SMARTER EVERYDAY MONEY</small></span></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <button data-view="home" class="navlink active" data-i18n="navHome">Home</button>
+    <button data-view="tools" class="navlink" data-i18n="navTools">Money tools</button>
+    <button data-view="earn" class="navlink" data-i18n="navEarn">Earn online</button>
+    <button data-view="guides" class="navlink" data-i18n="navGuides">Guides</button>
+  </nav>
+  <label class="language"><span class="sr-only">Language</span><select id="language" aria-label="Language"><option value="en">EN</option><option value="pt">PT</option><option value="de">DE</option><option value="es">ES</option></select></label>
+</header>
+
+<main>
+  <section id="home" class="view active">
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="eyebrow">YOUR PRACTICAL MONEY COMPANION</span>
+        <h1 data-i18n="heroTitle">Make smarter money moves.</h1>
+        <p data-i18n="heroText">Simple tools and practical ideas to help you earn, save and plan with confidence.</p>
+        <div class="hero-actions"><button class="primary" data-go="tools" data-i18n="exploreTools">Explore free tools</button><button class="secondary" data-go="earn" data-i18n="findWays">Find ways to earn</button></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-card"><span>✦</span><small data-i18n="yourPlan">YOUR PLAN</small><strong>+12.8%</strong><em data-i18n="smallSteps">Small steps add up</em></div><div class="coin coin-one">€</div><div class="coin coin-two">$</div><div class="coin coin-three">CHF</div></div>
+    </div>
+    <div class="section-heading"><div><span class="eyebrow" data-i18n="startHere">START HERE</span><h2 data-i18n="popularTools">Popular tools</h2></div><button class="text-button" data-go="tools" data-i18n="viewAll">View all →</button></div>
+    <div class="card-grid">
+      <button class="feature-card" data-tool="savings"><span class="icon">◎</span><b data-i18n="savingsCalc">Savings calculator</b><small data-i18n="savingsDesc">Estimate how long your goal may take.</small><span class="card-arrow">↗</span></button>
+      <button class="feature-card" data-tool="budget"><span class="icon">▤</span><b data-i18n="budgetPlanner">Monthly budget</b><small data-i18n="budgetDesc">See what remains after expenses.</small><span class="card-arrow">↗</span></button>
+      <button class="feature-card" data-tool="interest"><span class="icon">％</span><b data-i18n="interestCalc">Compound interest</b><small data-i18n="interestDesc">Explore the effect of time and growth.</small><span class="card-arrow">↗</span></button>
+    </div>
+    <div class="callout"><div><span class="eyebrow" data-i18n="learnEarnSave">LEARN · EARN · SAVE</span><h2 data-i18n="oneStep">One small step can improve your finances.</h2><p data-i18n="oneStepText">Explore realistic ways to earn online and make your money go further.</p></div><button class="primary" data-go="guides" data-i18n="readGuides">Read practical guides</button></div>
+  </section>
+
+  <section id="tools" class="view">
+    <div class="page-heading"><span class="eyebrow" data-i18n="freeTools">FREE TOOLS</span><h1 data-i18n="toolsTitle">Plan your money</h1><p data-i18n="toolsIntro">Use these simple calculators. Your entries stay in this browser and are not sent to a server.</p></div>
+    <div class="tool-tabs"><button class="tool-tab active" data-tool="savings" data-i18n="savingsCalc">Savings calculator</button><button class="tool-tab" data-tool="budget" data-i18n="budgetPlanner">Monthly budget</button><button class="tool-tab" data-tool="interest" data-i18n="interestCalc">Compound interest</button></div>
+    <div class="calculator panel" id="calculator"></div>
+  </section>
+
+  <section id="earn" class="view">
+    <div class="page-heading"><span class="eyebrow" data-i18n="opportunities">OPPORTUNITIES</span><h1 data-i18n="earnTitle">Explore ways to earn online</h1><p data-i18n="earnIntro">A starting shortlist of established platforms. Check country eligibility, fees and payment terms before joining.</p></div>
+    <div class="notice"><b data-i18n="important">Important:</b> <span data-i18n="earnNotice">Income is not guaranteed. Never pay to unlock a job, and never share passwords or banking login details.</span></div>
+    <div class="opportunity-grid">
+      <article class="opportunity"><span class="tag">Research</span><h3>Prolific</h3><p data-i18n="prolificDesc">Paid academic studies and research participation. Availability varies by profile and country.</p><a href="https://www.prolific.com/participants" target="_blank" rel="noopener">Official website ↗</a></article>
+      <article class="opportunity"><span class="tag">User research</span><h3>TestingTime</h3><p data-i18n="testingDesc">Website, app and product research sessions. Invitations are not regular or guaranteed.</p><a href="https://www.testingtime.com/" target="_blank" rel="noopener">Official website ↗</a></article>
+      <article class="opportunity"><span class="tag">Freelance</span><h3>Upwork</h3><p data-i18n="upworkDesc">Offer writing, admin, design, translation or other skills to clients. Competition and platform fees apply.</p><a href="https://www.upwork.com/" target="_blank" rel="noopener">Official website ↗</a></article>
+      <article class="opportunity"><span class="tag">Freelance</span><h3>Fiverr</h3><p data-i18n="fiverrDesc">Create fixed-price service listings. You need a clear offer and a way to attract customers.</p><a href="https://www.fiverr.com/" target="_blank" rel="noopener">Official website ↗</a></article>
+    </div>
+  </section>
+
+  <section id="guides" class="view">
+    <div class="page-heading"><span class="eyebrow" data-i18n="knowledge">KNOWLEDGE</span><h1 data-i18n="guidesTitle">Practical money guides</h1><p data-i18n="guidesIntro">Straightforward starting points. Always verify local rules with official sources.</p></div>
+    <div class="guide-list">
+      <article class="guide"><span class="guide-number">01</span><div><h3 data-i18n="guide1Title">Build an emergency fund</h3><p data-i18n="guide1Text">Start with a small, realistic target. Track essential monthly costs and build a reserve gradually.</p></div></article>
+      <article class="guide"><span class="guide-number">02</span><div><h3 data-i18n="guide2Title">Spot online job scams</h3><p data-i18n="guide2Text">Be cautious of guaranteed returns, upfront fees, pressure tactics and requests to move money for someone else.</p></div></article>
+      <article class="guide"><span class="guide-number">03</span><div><h3 data-i18n="guide3Title">Create a simple monthly budget</h3><p data-i18n="guide3Text">List income, fixed costs, variable spending and savings. Review the plan once a week.</p></div></article>
+      <article class="guide"><span class="guide-number">04</span><div><h3 data-i18n="guide4Title">Start freelancing carefully</h3><p data-i18n="guide4Text">Choose one service, create sample work, define your price and check tax and registration rules where you live.</p></div></article>
+    </div>
+  </section>
+
+  <section id="about" class="view">
+    <div class="page-heading"><span class="eyebrow">POCKETPILOT</span><h1 data-i18n="aboutTitle">About this project</h1><p data-i18n="aboutText">PocketPilot provides educational tools and general information. It is not a bank, broker, tax adviser or financial adviser.</p></div>
+    <div class="panel legal"><h3 data-i18n="privacyTitle">Privacy</h3><p data-i18n="privacyText">The calculators run locally in your browser. This starter version does not create accounts or send calculator entries to a server. External websites have their own privacy policies.</p><h3 data-i18n="disclaimerTitle">Disclaimer</h3><p data-i18n="disclaimerText">Calculations are estimates for educational use, not financial, legal or tax advice. Verify important decisions with qualified professionals and official sources.</p><h3 data-i18n="contactTitle">Contact</h3><p data-i18n="contactText">Before launch, add a real contact email and the legally required publisher information for your country.</p></div>
+  </section>
+</main>
+
+<footer><a class="brand footer-brand" href="#"><span class="brandmark">✦</span><span>PocketPilot<small>SMARTER EVERYDAY MONEY</small></span></a><div class="footer-links"><button data-view="about" data-i18n="about">About</button><button data-view="about" data-i18n="privacy">Privacy</button><button data-view="about" data-i18n="disclaimer">Disclaimer</button></div><small>© <span id="year"></span> PocketPilot. <span data-i18n="footerNote">Educational information only.</span></small></footer>
+<script src="app.js"></script>
+</body></html>
